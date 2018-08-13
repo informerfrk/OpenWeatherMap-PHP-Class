@@ -17,3 +17,29 @@ Now for example, if you want to show the current temperetature, then below is th
 ```
 echo $currentObj->temp();
 ```
+
+### Get weather forecast data
+Include the classes/Forecast.php file.
+Create object:
+```
+$forecast_Obj = new Forecast("OpenWeatherMap_API_KEY", "CITY", "UNIT");
+```
+You can get upto 7 days of weather forecast.
+
+Toget the maximum temperature for next day:
+```
+echo $forecast_Obj->maxTemp(0);
+```
+For day 2:
+```
+echo $forecast_Obj->maxTemp(1);
+```
+Just like this you have to pass 0 to 6 parameter to get the upcoming 7 days weather forecast. You can use the PHP for loop to get weather data for 7 days for one particular data.
+
+For example, you can get 7 days pressure data with the PHP code below:
+
+            <?php
+            for ($i=0; $i <= 6 ; $i++) { 
+                  echo $fcObj->fcPressure($i).', ';
+              }
+            ?>

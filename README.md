@@ -6,7 +6,7 @@ OpenWeatherMap PHP Class can be used to fetch OpenWeatherMap weather data.
 There are two PHP class available in this class. One is for getting the current weather data and the other one is to get the weather forecast dta.
 
 The classes was developed and maintaining by [CodeSpeedy Coding Solutions](https://www.codespeedy.com/). Below is given the usage of the classes:
-### Get current weather data
+## Get current weather data
 To get the current weather data, you have to include the classes/CurrentClass.php.
 After that create the object of the class and pass the OpenWeatherMap API key, city and unit in the time of creating the object just like below:
 ```
@@ -18,7 +18,7 @@ Now for example, if you want to show the current temperetature, then below is th
 echo $currentObj->temp();
 ```
 
-### Get weather forecast data
+## Get weather forecast data
 Include the classes/Forecast.php file.
 Create object:
 ```

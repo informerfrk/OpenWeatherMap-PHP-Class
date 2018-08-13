@@ -6,11 +6,11 @@ The classes was developed and maintaining by [CodeSpeedy Coding Solutions](https
 ### Get current weather data
 To get the current weather data, you have to include the classes/CurrentClass.php.
 After that create the object of the class and pass the OpenWeatherMap API key, city and unit in the time of creating the object just like below:
-'''
+```
 $currentObj = new CurrentClass("OpenWeatherMap_API_KEY", "CITY", "UNIT");
-'''
+```
 Currently the supported units are metric and imperial.
 Now for example, if you want to show the current temperetature, then below is the code:
-'''
+```
 echo $currentObj->temp();
-'''
+```
